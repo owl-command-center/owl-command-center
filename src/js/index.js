@@ -75,7 +75,6 @@ fetch(graphQLEndpoint, {
     body: JSON.stringify(graphQLQuery),
     headers: {
         'Client-Id': clientId,
-        'Cache-Control': 'no-cache'
     }
 }).then(r => r.json()).then(r => {
     console.log(r);
